@@ -1,14 +1,13 @@
 <% if @current_user%>
   <h1>Places</h1>
+   <div class="col-sm-3 text-end">
+    <a href="/places/new/" class="btn btn-primary">New Place</a>
+ </div>
   <ul>
     <% for place in @places %>
       <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
     <% end %>
   </ul>
-
-  <p>
-    <a href="/places/new">New place</a>
-  </p>
 <% else %>
   <p> You must be logged in to view places </p>
 <% end %>

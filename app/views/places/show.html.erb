@@ -20,6 +20,9 @@
                 border-radius: 5px;
               }
             </style>
+                <div class="col-sm-3 text-end">
+                  <a href="/posts/new?place_id=<%= @place["id"] %>" class="btn btn-primary">New Post</a>
+                </div>
           </head>
           <body>
             <div class="fixed-width-container">
@@ -43,9 +46,7 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
           </body>
           </html>
-    <p>
-      <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
-    </p>
+    
 
     <p>
       <a href="/places">Back to All Places</a>
